@@ -5,8 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="burgerToggle.js" defer></script>
+    <script src="background.js" defer></script>  
 </head>
 <body>
-    
+    <nav class="navigationBar">
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo__name">Blanka Ratyńska</span>
+                <span class="logo__profession">photographer</span>
+            </a>
+        </div>
+        <ul class="nav__links">
+            <li>
+                <img src="./assets/svgs/cancel.svg" alt="close menu cross">
+            </li>
+            <li>
+                <a href="gallery.html">GALLERY</a>
+            </li>
+            <li>
+                <a href="contact.html">CONTACT</a>
+            </li>
+            <li>
+                <a href="aboutMe.html">ABOUT ME</a>
+            </li>
+        </ul>
+        <ul class="nav__socialmedia">
+            <li>
+                <a href="">
+                    <img class="facebook-icon" src="./assets/svgs/facebook.svg" alt="facebook icon">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img class="instagram-icon" src="./assets/svgs/instagram.svg" alt="instagram icon">
+                </a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>  
+    </nav>
+    <div class="aboutMe">
+        <span class="introduction"> 
+        Fotografia jest moją pasją od 2010 roku. Zajmuję się głównie fotografią portretową i każda z portretowanych osób staje się moją <span class="mus"> muzą. </span></span>
+        <span class="introduction2"> Zawsze szukam światła, które wydobywa najlepsze cechy, a jednocześnie prawdę o osobie portretowanej. 
+        </span>
+
+        <div class="cooperations">
+            <div>
+                <span class="cooperations-with-actors"> 
+                Współpracowałam z aktorkami
+                </span>
+                <ul class="list-of-co-workers">
+                    <li>Partrycja Volny</li>
+                    <li><span> ('Pokot' - reż. A. Holland, 'Kurier' - reż. W.Pasikowski, 'Stulecie Winnych' reż. P.Trzaskalski)</span></li>
+                    <li>Magdalena Pociecha</li>
+                    <li><span> ('Big Love' - reż. B. Białowąs, 'Dziewczyny ze Lwowa' - reż. W. Adamczyk, A. Wojtyszka)</span></li>
+                </ul>
+            </div>
+            
+            <div>
+                <span class="cooperations-with-models"> 
+                a także ze znanymi modelkami
+                </span> 
+                <ul class="list-of-co-workers"> 
+                    <li>Klaudia Lawrenc</li>
+                    <li><span> 'Finaliska Miss Polski 2014'</span></li>
+                    <li>Klaudia Winiarska</li>
+                    <li><span> 'Specto Models'</span></li>
+                    <li>Monika Kot</li>
+                    <li>Magdalena Jakubiak</li>
+                    <li>Aleksandra Zdroszczyk</li>
+                </ul>
+            </div>
+
+            <div>
+                <span class="cooperations-with-make-up-artists">
+                oraz z najelpszymi wizażystami
+                </span>
+                <ul class="list-of-co-workers">
+                    <li>Patryk Nadolny</li>
+                    <li>Ewelina Szymańska</li>
+                    <li>Ewelina Sokołowska-Charusta</li>
+                    <li> Dorota Gajewska</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="backgroundMask"></div>
 </body>
 </html>

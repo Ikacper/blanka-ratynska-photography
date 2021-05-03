@@ -4,12 +4,34 @@
   padding: 0;
 }
 
+/* antonio-regular - latin */
+@font-face {
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("./assets/fonts/antonio-v1-latin-ext_latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/antonio-v1-latin-ext_latin-regular.woff")
+      format("woff"); /* Modern Browsers */
+}
+/* antonio-600 - latin */
+@font-face {
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""),
+    url("./assets/fonts/antonio-v1-latin-ext_latin-600.woff2") format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/antonio-v1-latin-ext_latin-600.woff") format("woff"); /* Modern Browsers */
+}
+
 body {
   height: 100vh;
   background: url(./assets/images/1.jpg) no-repeat center center fixed;
   background-size: cover;
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: "Anton", sans-serif;
+  font-family: "Antonio";
 }
 
 /* index.html */
@@ -31,7 +53,6 @@ body {
 .nav__name {
   letter-spacing: 0.3rem;
   font-size: 1.6rem;
-  font-weight: 200;
 }
 
 .nav__list {
@@ -166,7 +187,9 @@ body {
 .albums__list {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 2rem auto;
 }
 
@@ -177,7 +200,7 @@ body {
 
 .album > img {
   padding: 1.5rem 0.2rem 0.5rem 0.2rem;
-  width: 200px;
+  width: 210px;
   height: 300px;
 }
 
@@ -190,7 +213,7 @@ body {
   margin: 0 1rem;
   text-align: center;
   border-bottom: 1px solid #474747;
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-weight: 400;
 }
 
@@ -266,6 +289,87 @@ body {
   width: 15px;
   height: 15px;
   fill: #474747;
+}
+
+/* about me page */
+.aboutMe {
+  max-width: 700px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction {
+  max-width: 400px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem auto;
+  color: #474747;
+  line-height: 2;
+}
+
+.introduction2 {
+  max-width: 400px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem auto;
+  color: #474747;
+  line-height: 2;
+}
+
+.mus {
+  color: #000;
+}
+
+.cooperations {
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.cooperations > div {
+  max-width: 300px;
+  margin: 1rem;
+}
+
+.cooperations-with-actors {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem;
+  color: #474747;
+}
+
+.cooperations-with-models {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem;
+  color: #474747;
+}
+
+.cooperations-with-make-up-artists {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem;
+  color: #474747;
+  text-align: center;
+}
+
+.list-of-co-workers {
+  margin: 1rem;
+}
+
+.list-of-co-workers > li {
+  list-style: none;
+  font-weight: 600;
+  margin: 0.2rem;
+}
+
+.list-of-co-workers > li > span {
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
